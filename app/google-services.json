@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "885821755343",
+    "firebase_url": "https://fir-student2020priyanka.firebaseio.com",
+    "project_id": "fir-student2020priyanka",
+    "storage_bucket": "fir-student2020priyanka.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885821755343:android:2def3c48a9daddb88cccba",
+        "android_client_info": {
+          "package_name": "com.example.firebasestudent2020priyanka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885821755343-jnopsg38ijfvip9g31eaqikdtnan2oip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebasestudent2020priyanka",
+            "certificate_hash": "799a2c942485c8b32d1cf4b67018f5559af3a503"
+          }
+        },
+        {
+          "client_id": "885821755343-fmc58nrbccr7lb14h5itd1k0iik9rn47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjsA2ENPbpHrjrtvmeKBWnI2ZlG2qSM2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885821755343-fmc58nrbccr7lb14h5itd1k0iik9rn47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
