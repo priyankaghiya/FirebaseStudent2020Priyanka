@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +23,8 @@ public class MainActivity extends Activity
     Button btlog,btreg;
     ProgressBar prog;
     FirebaseAuth fAuth;
+    String vmail;
+    String vpass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -46,8 +49,8 @@ public class MainActivity extends Activity
             @Override
             public void onClick(View v)
             {
-                String vmail=etEmail.getText().toString();
-                String vpass=etPass.getText().toString();
+                vmail=etEmail.getText().toString();
+                vpass=etPass.getText().toString();
 
                 etEmail.setText("");
                 etPass.setText("");
@@ -77,8 +80,8 @@ public class MainActivity extends Activity
         btlog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String vmail=etEmail.getText().toString();
-                String vpass=etPass.getText().toString();
+                vmail=etEmail.getText().toString();
+                vpass=etPass.getText().toString();
 
                 etEmail.setText("");
                 etPass.setText("");
@@ -90,6 +93,12 @@ public class MainActivity extends Activity
                                 if(task.isSuccessful())
                                 {
                                     Toast.makeText(getApplicationContext(),"WEL-COME AUTHORISED USER",Toast.LENGTH_LONG).show();
+                                    Intent ii=new Intent(getApplicationContext(),Register.class);
+                                    ii.putExtra("vmail",vmail);
+                                    ii.putExtra("vpass",vpass);
+                                    startActivity(ii);
+                                    finish();
+
                                 }
                                 else
                                 {
