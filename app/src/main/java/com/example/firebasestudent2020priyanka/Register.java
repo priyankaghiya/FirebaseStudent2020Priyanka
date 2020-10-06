@@ -14,7 +14,7 @@ public class Register extends Activity
 {
     String val_email;
     String val_pass;
-    Button btn1;
+    Button btn1,btn2,btn3,btn4;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -23,6 +23,9 @@ public class Register extends Activity
         setContentView(R.layout.activity_register);
 
         btn1=findViewById(R.id.btn1);
+        btn2=findViewById(R.id.btn2);
+        btn3=findViewById(R.id.btn3);
+        btn4=findViewById(R.id.btn4);
 
         Intent ii=getIntent();
         val_email=ii.getStringExtra("vmail");
@@ -38,7 +41,7 @@ public class Register extends Activity
                 ij2.putExtra("email",val_email);
                 ij2.putExtra("password",val_pass);
                 startActivity(ij2);
-                finish();
+//                finish();
 
 
 

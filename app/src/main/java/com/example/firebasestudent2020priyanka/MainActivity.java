@@ -93,16 +93,19 @@ public class MainActivity extends Activity
                                 if(task.isSuccessful())
                                 {
                                     Toast.makeText(getApplicationContext(),"WEL-COME AUTHORISED USER",Toast.LENGTH_LONG).show();
+                                    prog.setVisibility(View.GONE);
+
                                     Intent ii=new Intent(getApplicationContext(),Register.class);
                                     ii.putExtra("vmail",vmail);
                                     ii.putExtra("vpass",vpass);
                                     startActivity(ii);
-                                    finish();
+//                                    finish();
 
                                 }
                                 else
                                 {
                                     Toast.makeText(getApplicationContext(),"YOU ARE UNAUTHORISED USER",Toast.LENGTH_LONG).show();
+                                    prog.setVisibility(View.GONE);
                                 }
                             }
                         });
