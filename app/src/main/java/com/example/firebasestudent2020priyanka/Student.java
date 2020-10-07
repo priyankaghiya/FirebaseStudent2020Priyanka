@@ -24,6 +24,11 @@ public class Student
             this.per = per;
         }
 
+        public String toString()
+        {
+            return "ID : "+unId+ "  MAIL : "+email+"   PASSWORD : "+pass+"  NAME : "+sname+" ADDRESS : "+addr+"  PHONE : "+phone+"   PER : "+per;
+        }
+
         public String getUnId() {
             return unId;
         }

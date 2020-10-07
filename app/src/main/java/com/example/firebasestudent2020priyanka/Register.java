@@ -48,5 +48,16 @@ public class Register extends Activity
             }
         });
 
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+              Intent ii=new Intent(getApplicationContext(),Show.class);
+              startActivity(ii);
+
+            }
+        });
+
     }
 }
