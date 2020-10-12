@@ -78,6 +78,21 @@ public class AddButtonClick extends Activity
             }
         });
 
+        btnUserRegCan.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                etUserRegId.setText("");
+                etUserRegPass.setText("");
+                etUserRegName.setText("");
+                etUserRegAddr.setText("");
+                etUserRegPhone.setText("");
+                etUserRegPer.setText("");
+
+            }
+        });
+
 
     }
 }

@@ -47,7 +47,7 @@ public class Show extends Activity
 
                 //Collection here (list) is the advanced java and it cannot be directly fitted into the component of the Android
                 //for that we have to use the ArrayAdapter in that first the Collection is given to the android development and then the
-                //andoid component listView is givent the adapter 
+                //andoid component listView is givent the adapter
 
                 //when add to list and add that list onto the array adapter
                 //first parameter - for which application, second parameter - what will be the view,what data

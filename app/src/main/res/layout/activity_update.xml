@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:padding="10sp"
+    tools:context=".Update">
+
+    <Spinner
+        android:id="@+id/spUserUpdMail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/etUserUpdPass"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textPassword"
+        android:hint=""
+        android:textSize="20sp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/etUserUpdName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="NAME : "
+        android:textSize="20sp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/etUserUpdAddr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="ADDRESS : "
+        android:textSize="20sp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/etUserUpdPhone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="PHONE : "
+        android:textSize="20sp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/etUserUpdPer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="PER : "
+        android:textSize="20sp">
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btUserUpdSub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Update"
+            android:textSize="25sp">
+        </Button>
+
+        <Button
+            android:id="@+id/btUserUpdCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textSize="25sp">
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>
