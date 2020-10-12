@@ -42,7 +42,7 @@ public class Update extends Activity
 
 
         spUserUpdMail=findViewById(R.id.spUserUpdMail);
-        etUserUpdPass=findViewById(R.id.etUserUpdAddr);
+        etUserUpdPass=findViewById(R.id.etUserUpdPass);
         etUserUpdName=findViewById(R.id.etUserUpdName);
         etUserUpdAddr=findViewById(R.id.etUserUpdAddr);
         etUserUpdPhone=findViewById(R.id.etUserUpdPhone);
